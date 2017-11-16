@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         TextView res = (TextView)findViewById(R.id.result);
         String snum1 = num1.getText().toString();
         String snum2 = num2.getText().toString();
-        res.setText("" + (Integer.parseInt(snum1) +
+        res.setText(""+ (Integer.parseInt(snum1) +
                 Integer.parseInt(snum2)));
 
     }
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         TextView res = (TextView)findViewById(R.id.result);
         String snum1 = num1.getText().toString();
         String snum2 = num2.getText().toString();
-        res.setText("" + (Integer.parseInt(snum1) -
+        res.setText(""+ (Integer.parseInt(snum1) -
                 Integer.parseInt(snum2)));
     }
     public void multiplication(View v){
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         TextView res = (TextView)findViewById(R.id.result);
         String snum1 = num1.getText().toString();
         String snum2 = num2.getText().toString();
-        res.setText("" + (Integer.parseInt(snum1) *
+        res.setText(""+ (Integer.parseInt(snum1) *
                 Integer.parseInt(snum2)));
     }
     public void division(View v){
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         TextView res = (TextView)findViewById(R.id.result);
         String snum1 = num1.getText().toString();
         String snum2 = num2.getText().toString();
-        res.setText("" + (Integer.parseInt(snum1) /
+        res.setText(""+ (Integer.parseInt(snum1) /
                 Integer.parseInt(snum2)));
     }
     public void clear(View v){

@@ -28,9 +28,25 @@
         android:text="@string/plus" />
 
     <Button
-
+        android:onClick="minus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/minus" />
+    <Button
+        android:onClick="multiplication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/multiplication" />
+    <Button
+        android:onClick="division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/division" />
+    <Button
+        android:onClick="clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear" />
+
 
 </LinearLayout>

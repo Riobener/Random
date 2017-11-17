@@ -50,13 +50,6 @@ public class MainActivity extends AppCompatActivity {
         res.setText("" + (Integer.parseInt(snum1) /
                 Integer.parseInt(snum2)));
     }
-    public void clear(View v){
-        EditText num1 = (EditText)findViewById(R.id.first_number);
-        EditText num2 = (EditText)findViewById(R.id.second_number);
-        TextView res = (TextView)findViewById(R.id.result);
-        num1.setText("");
-        num2.setText("");
-        res.setText("");
-    }
+
 
 }

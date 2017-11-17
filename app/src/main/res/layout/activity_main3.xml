@@ -2,16 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F100"
+    >
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#F00"
+        >
+
 
     <EditText
         android:id="@+id/first_number"
         android:layout_width="match_parent"
+        android:text="1234"
         android:layout_height="wrap_content"/>
 
     <EditText
         android:id="@+id/second_number"
         android:layout_width="match_parent"
+        android:text="3456"
         android:layout_height="wrap_content"/>
 
 
@@ -19,27 +33,30 @@
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:text="4690"
+        android:textSize="30dp"
+        />
 
     <Button
         android:onClick="plus"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:text="@string/plus"/>
 
     <Button
         android:onClick="minus"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/minus"/>
     <Button
         android:onClick="multiplication"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/multiplication"/>
     <Button
         android:onClick="division"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/division"/>
 
@@ -47,4 +64,5 @@
 
 
 
+</LinearLayout>
 </LinearLayout>

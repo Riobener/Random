@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/first_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <EditText
+        android:id="@+id/second_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_number"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_below="@id/second_number"
+        android:text=""/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:layout_below="@id/result">
+
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="180dp"
+        android:width="177dp"
+        android:onClick="plus"
+        android:textSize="100dp"
+        android:text="@string/plus"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:onClick="minus"
+        android:id="@+id/minus"
+        android:height="180dp"
+        android:width="177dp"
+        android:layout_width="wrap_content"
+        android:textSize="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignBaseline="@+id/plus"
+        android:layout_alignTop="@+id/plus"
+        android:layout_height="wrap_content"
+
+        android:text="@string/minus"/>
+    <Button
+        android:onClick="multiplication"
+        android:id="@+id/multiplication"
+        android:layout_width="wrap_content"
+        android:textSize="100dp"
+        android:height="180dp"
+        android:width="177dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/division"
+        android:text="@string/multiplication"/>
+    <Button
+        android:onClick="division"
+        android:id="@+id/division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="100dp"
+        android:height="180dp"
+        android:width="177dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/division"/>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
